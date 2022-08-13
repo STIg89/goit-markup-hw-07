@@ -156,7 +156,8 @@
     left: 13px;
     transform: translateY(-50%);
     cursor: pointer;
-    transition: background-color var(--duration) var(--cubic);
+    transition: background-color var(--duration) var(--cubic),
+    border-color var(--duration) var(--cubic);
 
     .check__box:checked+& {
         background-color: var(--accentColor);

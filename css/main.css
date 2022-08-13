@@ -608,8 +608,8 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
-  -webkit-transition: background-color var(--duration) var(--cubic);
-  transition: background-color var(--duration) var(--cubic);
+  -webkit-transition: background-color var(--duration) var(--cubic), border-color var(--duration) var(--cubic);
+  transition: background-color var(--duration) var(--cubic), border-color var(--duration) var(--cubic);
 }
 .check__box:checked + .check__square {
   background-color: var(--accentColor);
