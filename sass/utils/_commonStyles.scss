@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--primaryColor);
+    background: var(--bgW);
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.benefits,
+.performance,
+.team,
+.clients,
+.card {
+    padding: 94px 0 94px 0;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+    transition: color var(--duration) var(--cubic);
+}
+
+.icon {
+    transition: color var(--duration) var(--cubic);
+}
+
+.link:hover,
+.link:focus,
+.btn:hover,
+.btn:focus,
+.icon:hover,
+.icon:focus {
+    color: var(--accentColor);
+}
+
+.primary-btn {
+    @extend %flexAcJc;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 200px;
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--bgW);
+    background-color: var(--accentColor);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--duration) var(--cubic),
+    color var(--duration) var(--cubic);
+
+    &:focus,
+    &:hover {
+        background-color: #188CE8;
+        color: var(--bgW);
+}
+}
+
+.social__list {
+    @extend %flexSB;
+}
+
+.social__link {
+    @extend %flexAcJc;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: currentColor;
+}

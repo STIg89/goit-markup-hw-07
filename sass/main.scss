@@ -1,0 +1,179 @@
+@import 'utils/vars';
+@import 'utils/templates';
+@import 'utils/commonStyles';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/portfolio';
+@import 'components/modal';
+
+
+// effective/////////////////////////////////////////////////////
+
+.effective {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background: 
+    linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+    url('../img/heroBG.jpg') center no-repeat,
+    var(--bgG);
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.effective__title {
+    margin: 0 auto 30px auto;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--bgW);
+}
+
+// benefits/////////////////////////////////////////////////////
+
+.benefits__title {
+    @extend %visibilityHidden;
+}
+.benefits__columns {
+    @extend %flexSB;
+}
+
+.benefits__article {
+    flex-basis: calc((100% - var(--cardGap)*3) / 4);
+
+    & h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 10px
+    }
+
+    & p {
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--secondaryColor);
+    }
+}
+
+.benefits__thumb {
+    @extend %flexAcJc;
+    height: 120px;
+    background-color: var(--bgLG);
+    margin-bottom: var(--cardGap);
+}
+
+// performance/////////////////////////////////////////////////////
+
+.performance {
+    padding-top: 0;
+}
+
+.performance__title {
+    @extend %titleStyle;
+}
+
+.performance__image-list {
+    @extend %flexSB;
+}
+
+.performance__item {
+    position: relative;
+
+    & p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        @extend %flexAcJc;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--bgW);
+        background: rgba(47, 48, 58, 0.8);
+    }
+}
+
+// team/////////////////////////////////////////////////////
+
+.team {
+    background: var(--bgLG);
+}
+
+.team__title {
+    @extend %titleStyle;
+}
+
+.team__card {
+    @extend %flexSB;
+}
+
+.team__developer {
+    background: var(--bgW);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    & h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 10px;
+        }
+
+    & p {
+        line-height: 1.2;
+        text-align: center;
+        color: var(--secondaryColor);
+        margin-bottom: 16px;
+    }
+}
+
+.team__description {
+    padding: 30px 30px;
+}
+
+.social__link--team {
+    color: var(--iconG);
+    transition: background-color var(--duration) var(--cubic);
+
+    &:focus,
+    &:hover {
+    color: var(--bgW);
+    background-color: var(--accentColor);
+    }
+}
+
+// clients/////////////////////////////////////////////////////
+
+.clients__title {
+    @extend %titleStyle;
+}
+
+.clients__list {
+    @extend %flexSB;
+}
+
+.client__link {
+    @extend %flexAcJc;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--iconG);
+    border-radius: 4px;
+    color: var(--iconG);
+    fill: currentColor;
+    transition: border var(--duration) var(--cubic),
+    color var(--duration) var(--cubic);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accentColor);
+    }
+}

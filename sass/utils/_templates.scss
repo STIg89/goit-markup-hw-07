@@ -1,0 +1,36 @@
+%flexSB {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flexAcJc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flexAc {
+    display: flex;
+    align-items: center;
+}
+
+%visibilityHidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+%titleStyle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
