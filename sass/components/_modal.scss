@@ -12,7 +12,7 @@
     display var(--duration) var(--cubic),
     z-index var(--duration) var(--cubic);
 }
-.is-hidden {
+.backdrop--is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -48,6 +48,7 @@
         margin-bottom: 12px;
     }
 }
+
 .close-btn {
     @extend %flexAcJc;
     position: absolute;
