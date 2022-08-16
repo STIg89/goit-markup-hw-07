@@ -1,0 +1,11 @@
+.team {
+    background: var(--bgLG);
+}
+
+.team__title {
+    @extend %titleStyle;
+}
+
+.team__card-list {
+    @extend %flexSB;
+}

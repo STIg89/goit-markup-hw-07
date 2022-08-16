@@ -1,0 +1,32 @@
+.footer {
+    background: var(--bgG);
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__socials {
+    width: 210px;
+    margin-left: 70px;
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--bgW);
+    margin-bottom: 20px;
+}
+
+.footer__subscribe {
+    width: calc(50% - 15px);
+    margin-left: auto;
+}

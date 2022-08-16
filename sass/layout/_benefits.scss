@@ -1,0 +1,6 @@
+.benefits__title {
+    @extend %visibilityHidden;
+}
+.benefits__card-list {
+    @extend %flexSB;
+}

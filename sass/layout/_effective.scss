@@ -1,0 +1,11 @@
+.effective {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background: 
+    linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+    url('../img/heroBG.jpg') center no-repeat,
+    var(--bgG);
+    background-size: cover;
+    padding: 200px 0;
+}

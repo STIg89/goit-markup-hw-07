@@ -1,0 +1,28 @@
+.footer__form {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    outline: none;
+    transition: border-color var(--duration) var(--cubic),
+    box-shadow var(--duration) var(--cubic);
+    cursor: pointer;
+
+    &:hover {
+        border-color: var(--accentColor);
+    }
+
+    &:focus {
+        border-color: whitesmoke;
+        box-shadow: 0px 0px 0px 1px whitesmoke;
+    }
+}

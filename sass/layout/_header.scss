@@ -1,0 +1,16 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    @extend %flexSB;
+    align-items: center;
+}
+
+.header__nav {
+    @extend %flexAc;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}

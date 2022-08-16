@@ -1,0 +1,11 @@
+.performance {
+    padding-top: 0;
+}
+
+.performance__title {
+    @extend %titleStyle;
+}
+
+.performance__card-list {
+    @extend %flexSB;
+}

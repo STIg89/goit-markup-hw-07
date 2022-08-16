@@ -1,0 +1,26 @@
+.header__nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list__link {
+    padding: 32px 0;
+}
+
+.nav-list__link--current {
+    color: var(--accentColor);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -1.5px;
+        transform: translateX(-50%);
+        width: calc(100% + 3px);
+        height: 4px;
+        background: var(--accentColor);
+        border-radius: 2px;
+        pointer-events: none;
+        }
+}

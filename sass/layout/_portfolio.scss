@@ -1,0 +1,13 @@
+.portfolio__title {
+    @extend %visibilityHidden;
+}
+
+.portfolio__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cardGap);
+}
+
+.portfolio__card {
+    flex-basis: calc((100% - var(--cardGap)*2) / 3);
+}  

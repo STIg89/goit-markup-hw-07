@@ -1,0 +1,11 @@
+.social__list {
+    @extend %flexSB;
+}
+
+.social__link {
+    @extend %flexAcJc;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: currentColor;
+}

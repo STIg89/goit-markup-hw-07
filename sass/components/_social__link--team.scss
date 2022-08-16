@@ -1,0 +1,10 @@
+.social__link--team {
+    color: var(--iconG);
+    transition: background-color var(--duration) var(--cubic);
+
+    &:focus,
+    &:hover {
+    color: var(--bgW);
+    background-color: var(--accentColor);
+    }
+}

@@ -1,0 +1,11 @@
+.social__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--bgW);
+    transition: background-color var(--duration) var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accentColor);
+        color: var(--bgW);
+    }
+}

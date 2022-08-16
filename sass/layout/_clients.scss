@@ -1,0 +1,7 @@
+.clients__title {
+    @extend %titleStyle;
+}
+
+.clients__list {
+    @extend %flexSB;
+}
